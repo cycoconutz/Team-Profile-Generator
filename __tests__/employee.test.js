@@ -1,4 +1,4 @@
-const employee = require('./../lib/employee');
+const Employee = require('../lib/employee')
 
 describe("Employee", () => {
     describe("Initialization", () => {
@@ -9,8 +9,8 @@ describe("Employee", () => {
     });
     describe("getName", () => {
         it("Should return the name provided to the constructor function as the first argument", () => {
-            const newEmployee = new Employee("John Namesman", 123, "John@me.com");
-            const str = "John Namesman";
+            const newEmployee = new Employee("Nick Name", 123, "nick@name.com");
+            const str = "Nick Name";
             const result = newEmployee.getName();
             expect(str).toEqual(result);
         });
@@ -18,7 +18,7 @@ describe("Employee", () => {
 });
 describe("getId", () => {
     it("Should return the id provided to the constructor function as the second argument", () => {
-        const newEmployee = new Employee("John Namesman", 123, "John@me.com");
+        const newEmployee = new Employee("Nick Name", 123, "nick@name.com");
         const num = 123;
         const result = newEmployee.getId();
         expect(num).toEqual(result);
@@ -26,15 +26,15 @@ describe("getId", () => {
 });
 describe("getEmail", () => {
     it("Should return the email provided to the constructor function as the third argument", () => {
-        const newEmployee = new Employee("John Namesman", 123, "John@me.com");
-        const str = "John@me.com";
+        const newEmployee = new Employee("Nick Name", 123, "nick@name.com");
+        const str = "nick@name.com";
         const result = newEmployee.getEmail();
         expect(str).toEqual(result);
     });
 });
 describe("getRole", () => {
     it("Should return the string: Employee", () => {
-        const newEmployee = new Employee("John Namesman", 123, "John@me.com");
+        const newEmployee = new Employee("Nick Name", 123, "nick@name.com");
         const str = "Employee";
         const result = newEmployee.getRole();
         expect(str).toEqual(result);
