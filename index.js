@@ -59,7 +59,7 @@ const continueQ = () => {
                     promptEmployeeType();
                     break;
                 default:
-                    writeToFile("./dist/team.html", html.genHTML())
+                    writeToFile("index.html", html.genHTML())
                     break;
             }
         })

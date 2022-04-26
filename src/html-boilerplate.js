@@ -6,7 +6,7 @@ const mgrHTML = (element) => {
     let role = managerEl.getRole();
     return `<div class="col pb-3 pr-3 mb-3 bg-body rounded">
     <div class="card shadow" style="width: 18rem;">
-        <div  class="card-body bg-primary rounded bg-danger">
+        <div  class="card-body bg-primary rounded-top bg-danger">
             <h5 class="card-title text-light text-center">${name}</h5>
             <p class="card-text text-light text-center">💰${role}</p>
         </div>
@@ -27,7 +27,7 @@ const internHTML = (element) => {
     let role = internEl.getRole();
     return `<div class="col pb-3 pr-3 mb-3 bg-body rounded ">
     <div class="card shadow" style="width: 18rem;">
-        <div class="card-body bg-primary rounded bg-warning">
+        <div class="card-body bg-primary rounded-top bg-warning">
             <h5 class="card-title text-light text-center">${name}</h5>
             <p class="card-text text-light text-center">🎓${role}</p>
         </div>
@@ -48,7 +48,7 @@ const engHTML = (element) => {
     let role = engineerEl.getRole();
     return `<div class="col pb-3 pr-3 mb-3 bg-body rounded">
     <div class="card shadow" style="width: 18rem;">
-        <div class="card-body bg-primary rounded bg-success">
+        <div class="card-body bg-primary rounded-top bg-success">
             <h5 class="card-title text-light text-center">${name}</h5>
             <p class="card-text text-light text-center">🔨${role}</p>
         </div>
@@ -96,7 +96,7 @@ const genHTML = () => {
     <title>My Team</title>
 </head>
 
-<body>
+<body >
     <header>
         <div class="d-flex p-5 align-items-center justify-content-center bg-primary">
             <h1 class="text-dark">My Team</h1>
